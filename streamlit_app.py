@@ -26,6 +26,8 @@ import snowflake.connector
 #streamlit.header("The fruit load list contains:")
 #streamlit.dataframe(my_data_rows)
 
+import requests
+
 #create the repeatable code block (called a function)
 def get_fruityvice_data(this_fruit_choice):
 	fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
